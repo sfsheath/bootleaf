@@ -56,7 +56,7 @@ var subwayLines = L.geoJson(null, {
   },
   onEachFeature: function (feature, layer) {
     if (feature.properties) {
-      var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Amphitheater</th><td>" + feature.properties.title + "</td></tr>" + "<table>";
+      var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><td>" + feature.properties.title + "</td></tr>" + "<table>";
       if (document.body.clientWidth <= 767) {
         layer.on({
           click: function (e) {
@@ -215,7 +215,7 @@ var layerControl = L.control.layers(baseLayers, overlays, {
 }).addTo(map);
 
 /* Add overlay layers to map after defining layer control to preserver order */
-map.addLayer(boroughs).addLayer(theaters);
+map.addLayer(boroughs).addLayer(subwayLines);
 
 var sidebar = L.control.sidebar("sidebar", {
   closeButton: true,
