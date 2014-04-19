@@ -162,7 +162,7 @@ var subwayLines = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/subways.geojson", function (data) {
+$.getJSON("data/roman-amphitheaters.geojson", function (data) {
   subwayLines.addData(data);
 });
 
