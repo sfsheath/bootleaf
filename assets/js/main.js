@@ -27,8 +27,8 @@ var boroughs = L.geoJson(null, {
   style: function (feature) {
     return {
       color: "black",
-      fill: false,
-      opacity: 1,
+      fill: true,
+      opacity: .5,
       clickable: false
     };
   },
