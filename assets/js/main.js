@@ -84,11 +84,11 @@ var subwayLines = L.geoJson(null, {
     layer.on({
       mouseover: function (e) {
         var layer = e.target;
-        layer.setStyle({
+   /*     layer.setStyle({
           weight: 3,
           color: "#00FFFF",
           opacity: 1
-        });
+        }); */
         if (!L.Browser.ie && !L.Browser.opera) {
           layer.bringToFront();
         }
