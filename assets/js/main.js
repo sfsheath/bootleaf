@@ -277,10 +277,8 @@ var baseLayers = {
 };
 
 var overlays = {
-  "Boroughs": boroughs,
-  "Subway Lines": subwayLines,
-  "<img src='assets/img/theater.png' width='24' height='28'>&nbsp;Theaters": theaters,
-  "<img src='assets/img/museum.png' width='24' height='28'>&nbsp;Museums": museums
+  "Provinces": boroughs,
+  "Amphitheaters": subwayLines,
 };
 
 var layerControl = L.control.layers(baseLayers, overlays, {
