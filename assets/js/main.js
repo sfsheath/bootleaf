@@ -26,20 +26,12 @@ var mapquestHYB = L.layerGroup([L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/sa
 var boroughs = L.geoJson(null, {
   style: function (feature) {
     return {
-      color: "black",
+      color: "red",
       fill: true,
-      opacity: .5,
+      opacity: .4,
       clickable: false
     };
   },
-  onEachFeature: function (feature, layer) {
-    boroughSearch.push({
-      name: layer.feature.properties.BoroName,
-      source: "Boroughs",
-      id: L.stamp(layer),
-      bounds: layer.getBounds()
-    });
-  }
 });
 $.getJSON("data/roman_empire_ad_200_extent.geojson", function (data) {
   boroughs.addData(data);
@@ -126,6 +118,12 @@ var subwayLines = L.geoJson(null, {
     }
   },
   onEachFeature: function (feature, layer) {
+    boroughSearch.push({
+      name: layer.feature.properties.title,
+      source: "Boroughs",
+      id: L.stamp(layer),
+      bounds: layer.getBounds()
+    });
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><th>Division</th><td>" + feature.properties.Division + "</td></tr>" + "<tr><th>Line</th><td>" + feature.properties.Line + "</td></tr>" + "<table>";
       if (document.body.clientWidth <= 767) {
