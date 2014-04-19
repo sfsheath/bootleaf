@@ -59,7 +59,7 @@ var subwayLines = L.geoJson(null, {
       name: layer.feature.properties.title,
       source: "Amphitheaters",
       id: L.stamp(layer),
-      bounds: layer.getBounds()
+/*      bounds: layer.getBounds() */
     });
   
 
