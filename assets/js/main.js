@@ -41,7 +41,7 @@ var boroughs = L.geoJson(null, {
     });
   }
 });
-$.getJSON("data/boroughs.geojson", function (data) {
+$.getJSON("data/roman_empire_ad_200_extent.geojson", function (data) {
   boroughs.addData(data);
 });
 
