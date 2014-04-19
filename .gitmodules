@@ -1,0 +1,6 @@
+[submodule "data/roman-amphitheaters"]
+	path = data/roman-amphitheaters
+	url = https://github.com/sfsheath/roman-amphitheaters.git
+[submodule "data/roman-maps"]
+	path = data/roman-maps
+	url = https://github.com/sfsheath/roman-maps.git

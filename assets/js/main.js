@@ -32,16 +32,8 @@ var boroughs = L.geoJson(null, {
       clickable: false
     };
   },
-  onEachFeature: function (feature, layer) {
-    boroughSearch.push({
-      name: layer.feature.properties.BoroName,
-      source: "Boroughs",
-      id: L.stamp(layer),
-      bounds: layer.getBounds()
-    });
-  }
 });
-$.getJSON("data/roman_empire_ad_200_extent.geojson", function (data) {
+$.getJSON("data/roman-maps/roman_empire_ad_200_extent.geojson", function (data) {
   boroughs.addData(data);
 });
 
@@ -98,7 +90,7 @@ var subwayLines = L.geoJson(null, {
     }); */
   }
 });
-$.getJSON("data/roman-amphitheaters.geojson", function (data) {
+$.getJSON("data/roman-amphitheaters/roman-amphitheaters.geojson", function (data) {
   subwayLines.addData(data);
 });
 
