@@ -1,0 +1,2174 @@
+{
+  "@context":{
+    "dcterms":"http://purl.org/dc/terms/",
+    "gn":"http://www.geonames.org/ontology#",
+    "prov":"http://www.w3.org/TR/prov-o/#",
+    "rdfs":"http://www.w3.org/2000/01/rdf-schema#",
+    "xsd":"http://www.w3.org/2001/XMLSchema#",
+
+    "@base": "http://purl.org/roman-amphitheaters/id/",
+   
+    "Feature":{"@id":"http://geovocab.org/spatial#Feature"},
+    "FeatureCollection":{"@id":"http://example.org/vocab#FeatureCollection"},
+    "Point":{"@id":"http://geovocab.org/geometry#Point"},
+
+    "coordinates":{ "@id":"http://www.w3.org/1999/02/22-rdf-syntax-ns#value", "@container":"@list" },
+    "features":"@graph",
+    "geometry":{"@id":"http://geovocab.org/geometry#geometry"},
+    "id":"@id",
+    "properties":{ "@id":"rdfs:isDefinedBy" },
+    "type":"@type",
+
+    "buildingtype" : { "@id" : "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", "@type" : "@id" },
+    "capacity":{"@id":"http://dbpedia.org/property/seatingCapacity" },
+    "comment":{"@id":"rdfs:comment" },
+    "created":{ "@id":"dcterms:created", "@type":"xsd:gDate" },
+    "location":{"@id":"gn:locatedIn","@type":"@id"},
+    "see":{"@id":"rdfs:seeAlso","@type":"@id" },
+    "source":{"@id":"prov:wasDerivedFrom","@type":"@id" },
+    "title":{"@id":"dcterms:title"},
+    "wikipedia":{"@id":"rdfs:seeAlso","@type":"@id"}
+  },
+
+  "type":"FeatureCollection",
+  "@id":"http://purl.org/roman-amphitheaters/",
+  "features":[
+    {
+      "type":"Feature",
+      "id":"duraEuroposAmphitheater",
+      "properties":{
+        "buildingtype" : "amphitheater",
+        "created":216,
+        "capacity":1000,
+        "title":"Amphitheater at Dura Europos",
+        "comment":"Capacity and date drawn from N. Pollard's \"Soldiers, Cities, and Civilians in Roman Syria\", p. 52",
+        "location":"http://pleiades.stoa.org/places/893989#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          40.728926,
+          34.749855,
+          223
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"arlesAmphitheater",
+      "properties":{
+        "buildingtype" : "amphitheater",
+        "created":90,
+        "capacity":20000,
+        "location":"http://pleiades.stoa.org/places/148217#this",
+        "see":"http://pleiades.stoa.org/places/148217/location-of-roman-amphitheater",
+        "title":"Amphitheater at Arles",
+        "wikipedia":"http://en.wikipedia.org/wiki/Arles_Amphitheatre"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          4.631111,
+          43.677778,
+          21
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"lyonAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Lyon",
+        "buildingtype" : "amphitheater",
+        "comment":"The capacity refers to number of seats after the early 2nd AD century expansion. In AD 19 the capacity was under 2000.",
+        "created":19,
+        "capacity":20000,
+        "location":"http://pleiades.stoa.org/places/167717#this",
+        "wikipedia":"http://en.wikipedia.org/wiki/Amphitheatre_of_the_Three_Gauls"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          4.830556,
+          45.770556,
+          206
+        ]
+      }
+    },{
+      "type":"Feature",
+      "id":"ludusMagnusArena",
+      "properties":{
+        "buildingtype": "practice arena",
+        "title":"Ludus Magnus Arena",
+        "wikipedia":"http://en.wikipedia.org/wiki/Ludus_Magnus",
+        "created":81,
+        "capacity":500,
+        "location":"http://pleiades.stoa.org/places/423025#this",
+        "comment": "Capacity is a guess."
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.494913,
+          41.889950,
+          22
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"romeAmphitheater",
+      "properties":{
+        "title":"Colosseum (Rome)",
+        "buildingtype" : "amphitheater",
+        "wikipedia":"http://en.wikipedia.org/wiki/Colosseum",
+        "created":80,
+        "capacity":50000,
+        "location":"http://pleiades.stoa.org/places/423025#this",
+        "see":"http://pleiades.stoa.org/places/285857974/centerpoint-of-amphitheatrum-flavium"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.492269,
+          41.890169,
+          22
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"eleutheropolisAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Eleutheropolis",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/687854#this",
+        "see":"http://pleiades.stoa.org/places/687854/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          34.8939,
+          31.6082
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"pompeiiAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Pompeii",
+        "buildingtype" : "amphitheater",
+        "wikipedia":"http://en.wikipedia.org/wiki/Amphitheatre_of_Pompeii",
+        "created":-70,
+        "last use":79,
+        "capacity":22000,
+        "location":"http://pleiades.stoa.org/places/433032#this",
+        "see":"http://pleiades.stoa.org/places/433032/amphitheater-of-pompeii",
+        "welchID":"1",
+        "bibliography": [
+                    {
+                        "dc:bibliographicCitation": "P. Zanker, <i>Pompeii: Public and private life</i> (Cambridge, MA, 1998) 68-72.",
+                        "worldcat": "http://www.worldcat.org/oclc/39143166"
+                    },
+                    {
+                        "dc:bibliographicCitation": "K. Welch, <i>The Roman Amphitheater from its Origins to the Colosseum</i> (Cambridge, MA, 2007) 192-198.",
+                        "worldcat": "http://www.worldcat.org/oclc/39143166"
+                    }
+                ]
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          14.495262,
+          40.751213,
+          21
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"meridaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Mérida (Emerita Augusta)",
+        "buildingtype" : "amphitheater",
+        "wikipedia":"http://en.wikipedia.org/wiki/Mérida_amphitheatre",
+        "created":-8,
+        "capacity":15000,
+        "location":"http://pleiades.stoa.org/places/256155#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            -6.337952,
+            38.916168,
+            231
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"newsteadAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Newstead (Trimontium)",
+        "buildingtype" : "amphitheater",
+        "created" : 80,
+        "capacity":2000,
+        "location":"http://pleiades.stoa.org/places/89304#this",
+        "comment" : "Date based on main period of military activity at the site."
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -2.6919,
+          55.6026,
+          83
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"conimbrigaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Conimbriga",
+        "buildingtype" : "amphitheater",
+        "created":50,
+        "capacity":4000,
+        "location":"http://pleiades.stoa.org/places/236443#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -8.49333,
+          40.099444,
+          100
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"cumaeAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Cumae",
+        "buildingtype" : "amphitheater",
+        "created":-100,
+        "location":"http://pleiades.stoa.org/places/432808#this",
+        "see":"http://pleiades.stoa.org/places/432808/location-of-roman-amphitheater",
+        "welchID":"4"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          14.056,
+          40.841847,
+          19
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"pozzuoliFlavianAmphitheater",
+      "properties":{
+        "title":"Flavian Amphitheater at Pozzuoli",
+        "buildingtype" : "amphitheater",
+        "created":70,
+        "capacity":20000,
+        "wikipedia":"http://en.wikipedia.org/wiki/Flavian_Amphitheater_(Pozzuoli)",
+        "location":"http://pleiades.stoa.org/places/432815#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          14.125315,
+          40.825929,
+          41
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"pozzuoliEarlyAmphitheater",
+      "properties":{
+        "title":"Early Amphitheater at Pozzuoli",
+        "buildingtype" : "amphitheater",
+        "created":-100,
+        "location":"http://pleiades.stoa.org/places/432815#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          14.127615,
+          40.826239,
+          58
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"syracuseAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Syracuse",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/462503#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          15.278934,
+          37.074132,
+          23
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"carthageAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Carthage",
+        "buildingtype" : "amphitheater",
+        "created":100,
+        "capacity":30000,
+        "location":"http://pleiades.stoa.org/places/314921#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          10.314924,
+          36.856078,
+          14
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"hadrianVillaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Hadrian's Villa at Tivoli",
+        "buildingtype" : "amphitheater",
+        "created":120,
+        "location":"http://pleiades.stoa.org/places/423127#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.778929,
+          41.941708,
+          99
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"corinthAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Corinth",
+        "buildingtype" : "amphitheater",
+        "created":-44,
+        "see":"http://corinth.sas.upenn.edu/gisamphitheater.html",
+        "location":"http://pleiades.stoa.org/places/570182#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          22.892126,
+          37.909629,
+          98
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"marcianopolisAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Marcianopolis (Devnya)",
+        "buildingtype" : "amphitheater",
+        "created":200,
+        "capacity":4000,
+        "location":"http://pleiades.stoa.org/places/216878#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          27.556674,
+          43.218689,
+          120
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"porolissumAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Porolissum",
+        "buildingtype" : "amphitheater",
+        "created":157,
+        "comment":"There was a wooden predecessor.",
+        "location":"http://pleiades.stoa.org/places/207361#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          23.154052,
+          47.177552,
+          441
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"nijmegenAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Nijmegen",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/98921#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          5.878859,
+          51.838523,
+          46
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"carnuntumLargeAmphitheater",
+      "properties":{
+        "title":"Large amphitheater at Carnuntum",
+        "buildingtype" : "amphitheater",
+        "created":150,
+        "capacity":15000,
+        "location":"http://pleiades.stoa.org/places/128376#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          16.892619,
+          48.126824,
+          164
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"carnuntumPetronellAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Carnuntum",
+        "buildingtype" : "amphitheater",
+        "created":100,
+        "capacity":12000,
+        "location":"http://pleiades.stoa.org/places/128376#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          16.850943,
+          48.110019,
+          185
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"leptisMagnaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Leptis Magna",
+        "buildingtype" : "amphitheater",
+        "created":56,
+        "capacity":16000,
+        "location":"http://pleiades.stoa.org/places/344448#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          14.309452,
+          32.632340,
+          18
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"empuriesAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Empuries",
+        "buildingtype" : "amphitheater",
+        "created":50,
+        "capacity":3300,
+        "location":"http://pleiades.stoa.org/places/246382#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          3.117431,
+          42.130042,
+          27
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"tarragonaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Tarragona",
+        "buildingtype" : "amphitheater",
+        "created":100,
+        "capacity":15000,
+        "location":"http://pleiades.stoa.org/places/246349#this",
+        "see":"http://pleiades.stoa.org/places/246349/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          1.258780,
+          41.114522,
+          13
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"cagliariAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Cagliari",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/471899#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          9.113228,
+          39.223908,
+          60
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"italicaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Italica",
+        "buildingtype" : "amphitheater",
+        "created":140,
+        "capacity":25000,
+        "location":"http://pleiades.stoa.org/places/256231#this",
+        "see":"http://pleiades.stoa.org/places/256231/roman-amphitheater-of-italica"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -6.046742,
+          37.443893,
+          17
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"segobrigaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Segobriga",
+        "buildingtype" : "amphitheater",
+        "created":90,
+        "capacity":7500,
+        "location":"http://pleiades.stoa.org/places/266036#this",
+        "see":"http://pleiades.stoa.org/places/266036/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -2.813944,
+          39.886018,
+          817
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"kataneCatinaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Katane/Catina",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/462270#this",
+        "capacity":16000
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            15.085323,
+            37.507096,
+            31
+        ],
+        "source":"http://pleiades.stoa.org/places/462270/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"paestumAmphitheater",
+      "properties":{
+        "title":"Amphitheatre at Paestum",
+        "buildingtype" : "amphitheater",
+        "created": -75,
+        "capacity": 4500,
+        "location":"http://pleiades.stoa.org/places/442733#this",
+        "welchID": "10"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            15.006449,
+            40.422354,
+            18
+        ],
+        "source":"http://pleiades.stoa.org/places/442733/location-of-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"lunaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Luna",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/403235#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            10.022386,
+            44.062656,
+            4
+        ],
+        "source":"http://pleiades.stoa.org/places/403235/location-of-roman-amphitheater-at-guildhall"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"casinumAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Casinum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/432764#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+         13.823575,
+         41.482933,
+         73
+        ],
+        "source":"http://pleiades.stoa.org/places/432764/loation-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"viminaciumAmphitheater",
+      "properties":{
+        "title":"Amphitheatre at Viminacium",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/207549#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          21.220083,
+          44.737985,
+          72
+        ],
+        "source":"http://pleiades.stoa.org/places/207549/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"flaviaSolvaAmphitheater",
+      "properties":{
+        "title":"Amphitheatre at Flavia Solva",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/197273#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          15.565777300000001,
+          46.767153499999999,
+          266
+        ],
+        "source":"http://pleiades.stoa.org/places/197273/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"rusellaeAmphitheater",
+      "properties":{
+        "title":"Amphitheatre at Rusellae",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413288#this",
+        "source":"http://pleiades.stoa.org/places/413288/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          11.159132,
+          42.828405,
+          165
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"lutetiaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Lutetia",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/109126#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            2.352855,
+            48.845097,
+            46
+        ],
+        "source":"http://pleiades.stoa.org/places/109126/location-of-arenes-de-lutece"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"octodurusForumClaudiiVallensiumAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Octodurus/Forum Claudii Vallensium",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/167859#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            7.073493,
+            46.094356,
+            480
+        ],
+        "source":"http://pleiades.stoa.org/places/167859/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"cyreneAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Cyrene",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/373778#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            21.850808,
+            32.824526,
+            550
+        ],
+        "source":"http://pleiades.stoa.org/places/373778/cyrene-main-theatre"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"libarnaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Libarna",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/383694#this",
+        "source":"http://pleiades.stoa.org/places/383694/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            8.867967,
+            44.706013,
+            225
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"luceriaNoukeriaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Luceria/Noukeria (Apoulon)",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/442640#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            15.344984,
+            41.508249,
+            196
+        ],
+        "source":"http://pleiades.stoa.org/places/442640/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"abellaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Abella",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/432617#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            14.608415,
+            40.961526,
+            224
+        ],
+        "source":"http://pleiades.stoa.org/places/432617/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"nimesAmphitheater",
+      "properties":{
+        "title":"Amphitheatre at Nimes",
+        "buildingtype" : "amphitheater",
+        "created": 90,
+        "capacity": 24000,
+        "location":"http://pleiades.stoa.org/places/148142#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            4.359599,
+            43.834876,
+            50
+        ],
+        "source":"http://pleiades.stoa.org/places/148142/arenes"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"charterhouseAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Charterhouse",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/79534#this",
+        "source":"http://pleiades.stoa.org/places/79534/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            -2.720301,
+            51.305437,
+            296
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"devaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Deva",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/79420#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            -2.886928,
+            53.189079,
+            23
+        ],
+        "source":"http://pleiades.stoa.org/places/79420/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"gennesAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Gennes",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/138371#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -0.2386057,
+          47.3352194
+        ],
+        "source":"http://pleiades.stoa.org/places/138371/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"scythopolisNysaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Scythopolis/Nysa",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/678378#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          35.501631000000003,
+          32.498395000000002
+        ],
+        "source":"http://pleiades.stoa.org/places/678378/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"scylletiumScolaciumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Scylletium/Scolacium",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/452439#this",
+        "source":"http://pleiades.stoa.org/places/452439/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          16.592329199999998,
+          38.806887799999998
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"burdigalaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Burdigala",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/138248#this",
+        "source":"http://pleiades.stoa.org/places/138248/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -0.58316599999999996,
+          44.847817499999998
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"uthinaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Uthina",
+        "buildingtype" : "amphitheater",
+        "created":120,
+        "capacity": 16000,
+        "location":"http://pleiades.stoa.org/places/315247#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           10.169215,
+           36.608597,
+           112
+        ],
+        "source" : "http://maps.google.com"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"carthagoNovaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Carthago Nova/Col. Urbs Iulia",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/265849#this",
+        "source":"http://pleiades.stoa.org/places/265849/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -0.98016099999999995,
+          37.600645499999999
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"virunumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Virunum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/197583#this",
+        "source":"http://pleiades.stoa.org/places/197583/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          14.366995899999999,
+          46.697877699999999
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"carsulaeAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Carsulae",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413065#this",
+        "source":"http://pleiades.stoa.org/places/413065/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.559678999999999,
+          42.639424900000002
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"florentiaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Florentia",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413138#this",
+        "source":"http://pleiades.stoa.org/places/413138/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          11.2595198,
+          43.768730300000001
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"ocriculumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Ocriculum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413231#this",
+        "source":"http://pleiades.stoa.org/places/413231/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.467190499999999,
+          42.411564800000001
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"lixusAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Lixus",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/275666#this",
+        "source":"http://pleiades.stoa.org/places/275666/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -6.1084683000000002,
+          35.199900399999997
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"arretiumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Arretium",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413032#this",
+        "source":"http://pleiades.stoa.org/places/413032/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          11.879690200000001,
+          43.460867100000002
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"larinumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Larinum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/442629#this",
+        "source":"http://pleiades.stoa.org/places/442629/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          14.9159226,
+          41.805842800000001
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"lucusFeroniaeAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Lucus Feroniae",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413184#this",
+        "source":"http://pleiades.stoa.org/places/413184/location-of-lucus-feroniae-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.594868,
+          42.129831000000003
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"allifaeAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Allifae",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/432658#this",
+        "source":"http://pleiades.stoa.org/places/432658/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          14.334692,
+          41.3259562
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"cemenelumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Cemenelum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/157834#this",
+        "source":"http://pleiades.stoa.org/places/157834/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          7.2752435000000002,
+          43.719672799999998
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"hydataHypsitanaForumTraianiAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Hydata Hypsitana/Forum Traiani",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/471947#this",
+        "source":"http://pleiades.stoa.org/places/471947/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          8.8044188000000005,
+          39.993123900000001
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"lucaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Luca",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/403234#this",
+        "source":"http://pleiades.stoa.org/places/403234/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          10.505772199999999,
+          43.845520299999997
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"hispellumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Hispellum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413170#this",
+        "source":"http://pleiades.stoa.org/places/413170/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.6662021,
+          42.995790900000003
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"veronaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Verona",
+        "buildingtype" : "amphitheater",
+        "created":30,
+        "capacity": 30000,
+        "wikipedia":"https://en.wikipedia.org/wiki/Verona_Arena",
+        "location":"http://pleiades.stoa.org/places/383816#this",
+        "source":"http://pleiades.stoa.org/places/383816/location-of-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          10.994350,
+          45.439040,
+          62
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"aquincumCivilAmphitheater",
+      "properties":{
+        "title":"Civil Amphitheater at Aquincum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/197130#this",
+        "created":275,
+        "wikipedia": "http://en.wikipedia.org/wiki/Aquincum_Civil_Amphitheatre"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          19.047985000000001,
+          47.567577,
+          105
+        ],
+        "source":"http://pleiades.stoa.org/places/197130/location-of-roman-amphitheater-1"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"aquincumMilitaryAmphitheater",
+      "properties":{
+        "title":"Military Amphitheater at Aquincum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/197130#this",
+        "created":150,
+        "wikipedia": "http://en.wikipedia.org/wiki/Aquincum_Military_Amphitheatre"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          19.039065999999998,
+          47.532947,
+          101
+        ],
+        "source":"http://pleiades.stoa.org/places/197130/location-of-roman-amphitheater-2"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"isuriumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Isurium",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/89209#this",
+        "source":"http://pleiades.stoa.org/places/89209/possible-location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -1.3796295999999999,
+          54.088115700000003
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"vesunnaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Vesunna",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/138650#this",
+        "source":"http://pleiades.stoa.org/places/138650/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          0.71330870000000002,
+          45.183192099999999
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"civitasCamunnorumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Civitas Camunnorum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/383617#this",
+        "source":"http://pleiades.stoa.org/places/383617/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          10.280644000000001,
+          45.943812899999998
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"grumentumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Grumentum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/442603#this",
+        "source":"http://pleiades.stoa.org/places/442603/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          15.911579400000001,
+          40.287640400000001
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"cordubaColPatriciaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Corduba/Col. Patricia",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/256128#this",
+        "source":"http://pleiades.stoa.org/places/256128/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -4.7888425999999997,
+          37.884126500000001
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"albaFucensAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Alba Fucens",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413005#this",
+        "source":"http://pleiades.stoa.org/places/413005/amphitheater-of-alba-fucens"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          13.412317,
+          42.077221999999999
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"colAugustaRauricaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Col. Augusta Raurica",
+        "buildingtype" : "amphitheater",
+        "created" : 200,
+        "capacity" : 6000,
+        "location":"http://pleiades.stoa.org/places/177494#this",
+        "source":"http://pleiades.stoa.org/places/177494/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           7.720610,
+           47.529294,
+           285
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"sutriumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Sutrium",
+        "location":"http://pleiades.stoa.org/places/413328#this",
+        "buildingtype" : "amphitheater",
+        "source":"http://pleiades.stoa.org/places/413328/location-of-roman-amphitheater",
+        "capacity":8500,
+        "created":-50,
+        "welchID": "15"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.2293009,
+          42.239312400000003,
+          271
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"ulpiaTraianaSarmizegetusaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Ulpia Traiana Sarmizegetusa",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/207527#this",
+        "source":"http://pleiades.stoa.org/places/207527/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          22.785320599999999,
+          45.516677299999998
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"salonaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Salona",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/197488#this",
+        "source":"http://pleiades.stoa.org/places/197488/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          16.473893,
+          43.538171800000001
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"korinionCironiumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Korinion/Cironium",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/79549#this",
+        "source":"http://pleiades.stoa.org/places/79549/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -1.9714981,
+          51.710580200000003
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"londiniumAugustaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Londinium/Augusta",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/79574#this",
+        "source":"http://pleiades.stoa.org/places/79574/location-of-roman-amphitheater-at-guildhall"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -0.092450000000000004,
+          51.5156317
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"tiburAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Tibur",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/423081#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.798114,
+          41.960571,
+          248
+        ],
+        "source":"http://pleiades.stoa.org/places/423081/location-of-anfiteatro-di-bleso"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"caerleonAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Caerleon",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/79532#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -2.9568780000000001,
+          51.608058999999997,
+          13
+        ],
+        "source":"http://pleiades.stoa.org/places/79532/roman-amphitheatre"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"telesiaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Telesia",
+        "buildingtype" : "amphitheater",
+        "created": -75,
+        "capacity": 9000,
+        "location":"http://pleiades.stoa.org/places/433147#this",
+        "source":"http://pleiades.stoa.org/places/433147/location-of-roman-amphitheater",
+        "welchID":"9"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          14.500496,
+          41.223911,
+          68
+        ]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"urbsSalviaAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Urbs Salvia",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413364#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          13.386850799999999,
+          43.201027000000003
+        ],
+        "source":"http://pleiades.stoa.org/places/413364/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"mediolanumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Mediolanum",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/138458#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -0.64335120000000001,
+          45.745392600000002
+        ],
+        "source":"http://pleiades.stoa.org/places/138458/location-of-gallo-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"asisiumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Asisium",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/413037#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          12.620383,
+          43.071021999999999
+        ],
+        "source":"http://pleiades.stoa.org/places/413037/roman-amphitheater-of-asisium"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"durresAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Durrës",
+        "created" : 100,
+        "capacity" : 20000,
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/481818#this",
+        "wikipedia" : "http://en.wikipedia.org/wiki/Durrës_Amphitheatre"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           19.445131,
+           41.312241,
+           15
+        ],
+        "source":"http://pleiades.stoa.org/places/481818/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"lambaesisAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Lambaesis",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/334570#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          6.2599349999999996,
+          35.489246999999999
+        ],
+        "source":"http://pleiades.stoa.org/places/334570/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"mactarisAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Mactaris",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/324774#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          9.2066727000000004,
+          35.855627900000002
+        ],
+        "source":"http://pleiades.stoa.org/places/324774/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"coriniumAmphitheatre",
+      "properties":{
+        "title":"Amphitheatre at Corinium",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/197225#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -1.9714981,
+          51.710580200000003
+        ],
+        "source":"http://pleiades.stoa.org/places/197225/location-of-roman-amphitheater"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"vindonissaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Vindonissa",
+        "buildingtype" : "amphitheater",
+        "created" : 50,
+        "capacity" : 11000,
+        "location":"http://pleiades.stoa.org/places/177661#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           8.213605,
+           47.476290,
+           361
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"thysdrusSmallAmphitheater",
+      "properties":{
+        "title":"Small Amphitheater at Thysdrus",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/324835#this",
+        "created": 125,
+        "capacity": 9000
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          10.707911,
+          35.290106,
+          116
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"thysdrusAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Thysdrus",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/324835#this",
+        "created": 238,
+        "capacity": 35000,
+        "youtube" : "https://www.youtube.com/watch?v=bDDyEMg34Os"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          10.706939,
+          35.296390000000002,
+          111
+        ],
+        "source":"http://pleiades.stoa.org/places/324835/amphitheatre-of-el-jem"
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"colForumIuliiAmphitheater",
+      "properties":{
+        "title":"Amphitheatre at Col. Forum Iulii",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/157836#this",
+        "source":"http://pleiades.stoa.org/places/157836/location-of-roman-amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          6.7283211999999999,
+          43.434729300000001
+        ]
+      }
+    },{
+      "type":"Feature",
+      "id":"gortynAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Gortyn",
+        "buildingtype" : "amphitheater",
+        "created":150,
+        "location":"http://pleiades.stoa.org/places/589796#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          24.953076,
+          35.056454,
+          150
+        ]
+      }
+    },{
+      "type":"Feature",
+      "id":"leptiminusAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Leptiminus",
+        "buildingtype" : "amphitheater",
+        "location":"http://pleiades.stoa.org/places/324767#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          10.866282,
+          35.678077,
+          9
+        ]
+      }
+    },{
+      "type":"Feature",
+      "id":"miciaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Micia",
+        "buildingtype" : "amphitheater",
+        "capacity": 1500,
+        "location": "http://pleiades.stoa.org/places/207286#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          22.817310,
+          45.915008,
+          183
+        ]
+      }
+    },{
+      "type":"Feature",
+      "id":"gemellaeAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Gemellae",
+        "buildingtype" : "amphitheater",
+        "capacity": 3000,
+        "created": 130,
+        "golvinID": "44",
+        "location": "http://pleiades.stoa.org/places/334553#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          5.522904,
+          34.636598,
+          83
+        ],
+        "comment": "Location is of fort as a proxy for amphitheater."
+      }
+    },{
+      "type":"Feature",
+      "id":"cherchellAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Cherchell",
+        "buildingtype" : "amphitheater",
+        "location": "http://pleiades.stoa.org/places/295279#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          2.198958,
+          36.608780,
+          29
+        ]
+      }
+    },{
+      "type":"Feature",
+      "id":"pulaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Pula",
+        "buildingtype" : "amphitheater",
+        "created":1,
+        "capacity":26000
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          13.850243,
+          44.873229,
+          16
+        ]
+      }
+    },{
+      "type":"Feature",
+      "id":"carmonaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Carmona",
+        "buildingtype" : "amphitheater",
+        "created": -50,
+        "capacity": 8000,
+        "comment": "Size is only estimate based Welch reporting a comparison with Sutrium.",
+        "welchID": "17"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          -5.650907,
+          37.469674,
+          223
+        ]
+      }
+    },{
+      "type":"Feature",
+      "id":"caesareaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Caesarea",
+        "buildingtype" : "amphitheater",
+        "created": 150,
+        "comment": "Date very approximate."
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           34.897451,
+           32.506473,
+           11
+        ]
+      }
+    },{
+      "type":"Feature",
+      "id":"pergamumAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Pergamum",
+        "buildingtype" : "amphitheater",
+        "created": 100,
+        "capacity": 25000,
+        "comment": "Date very approximate."
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           27.174177,
+           39.125751,
+           100
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"anazarbusAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Anazarbus",
+        "buildingtype" : "amphitheater",
+        "comment": "Location not confirmed."
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          35.900509,
+          37.248241,
+          50
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"antiochAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Antioch",
+        "created": -50,
+        "buildingtype" : "amphitheater",
+        "comment": "Location not specific.",
+        "welchID": "19"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+            36.160437,
+            36.202624,
+            89
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"cyzicusAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Cyzicus",
+        "buildingtype" : "amphitheater",
+        "comment": "Location not specific."
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           27.89,
+           40.38
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"sabrathaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Sabratha",
+        "buildingtype" : "amphitheater",
+        "capacity" : 20700,
+        "created" : 125
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           12.494040,
+           32.803879,
+           11
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"salamisAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Salamis",
+        "buildingtype" : "amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           33.902435,
+           35.185517,
+           6
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"paphosAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Paphos",
+        "buildingtype" : "amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           32.405344,
+           34.754942,
+           6
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"carmarthenAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Carmarthen",
+        "buildingtype" : "amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           -4.296651,
+           51.862005,
+           29
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"caerwentAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Caerwent",
+        "buildingtype" : "amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           -2.766307,
+           51.612173,
+           25
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"tomen-y-murAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Tomen y Mur",
+        "buildingtype" : "amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           -3.923500,
+           52.931893,
+           295
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"thaenaeAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Thaenae",
+        "buildingtype" : "amphitheater",
+        "created" : 125,
+        "capacity" : 8700,
+        "golvinID" : "71"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           10.673126,
+           34.655481,
+           7
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"sbeitlaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Sbeitla",
+        "buildingtype" : "amphitheater",
+        "created" : 160,
+        "capacity" : 6600
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           9.114582,
+           35.243617,
+           556
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"thevesteAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Theveste",
+        "buildingtype" : "amphitheater",
+        "created" : 120,
+        "capacity" : 14200
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           8.123809,
+           35.401171,
+           877
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"trierAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Trier",
+        "buildingtype" : "amphitheater",
+        "created" : 100,
+        "capacity" : 20000,
+        "youtube" : "https://www.youtube.com/watch?v=WYOvPyCntiY"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           6.649088,
+           49.748052,
+           168
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"susaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Susa",
+        "latinName" : "Segusium",
+        "created" : -20,
+        "buildingtype" : "amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           7.044970,
+           45.133185,
+           546
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"ivreaAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Ivrea",
+        "latinName" : "Eporedia",
+        "buildingtype" : "amphitheater"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           7.887734,
+           45.467767,
+           240
+        ],
+        "source":"http://maps.google.com/"
+      }
+    },{
+      "type":"Feature",
+      "id":"bararusAmphitheater",
+      "properties":{
+        "title":"Amphitheater at Bararus",
+        "created": 220,
+        "buildingtype" : "amphitheater",
+        "comment" : "Unfinished? Considered the last North African amphitheater.",
+        "location": "http://pleiades.stoa.org/places/324673#this"
+      },
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+           10.791226,
+           35.211828,
+           68
+        ],
+        "source":"http://maps.google.com/"
+      }
+    }
+  ]
+}
