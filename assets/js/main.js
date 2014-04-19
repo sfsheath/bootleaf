@@ -55,6 +55,14 @@ var subwayLines = L.geoJson(null, {
     };
   },
   onEachFeature: function (feature, layer) {
+    boroughSearch.push({
+      name: layer.feature.properties.title,
+      source: "Amphitheaters",
+      id: L.stamp(layer),
+      bounds: layer.getBounds()
+    });
+  
+
     if (feature.properties) {
       var content = "<table class='table table-striped table-bordered table-condensed'>" + "<tr><td>" + feature.properties.title + "</td></tr>" + "<table>";
       if (document.body.clientWidth <= 767) {
