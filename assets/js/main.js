@@ -222,7 +222,7 @@ var baseLayers = {
 var overlays = {
   "Amphitheaters": subwayLines,
   "Provinces (200 AD)": boroughs,
-  "Roman Territy 60 BC": rome60bc
+  "Roman Territory 60 BC": rome60bc
 };
 
 var layerControl = L.control.layers(baseLayers, overlays, {
