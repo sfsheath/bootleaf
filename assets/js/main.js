@@ -260,7 +260,7 @@ var layerControl = L.control.layers(baseLayers, overlays, {
 }).addTo(map);
 
 /* Add overlay layers to map after defining layer control to preserver order */
-map.addLayer(boroughs).addLayer(subwayLines);
+map.addLayer(boroughs).addLayer(rome60bc).addLayer(subwayLines);
 
 var sidebar = L.control.sidebar("sidebar", {
   closeButton: true,
