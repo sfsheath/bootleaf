@@ -37,6 +37,21 @@ $.getJSON("data/roman-maps/roman_empire_ad_200_extent.geojson", function (data) 
   boroughs.addData(data);
 });
 
+var rome60bc = L.geoJson(null, {
+  style: function (feature) {
+    return {
+      color: "blue",
+      fill: true,
+      opacity: .5,
+      clickable: false
+    };
+  },
+});
+$.getJSON("data/roman-maps/roman_empire_bc_60_extent.geojson", function (data) {
+  rome60bc.addData(data);
+});
+
+
 var subwayLines = L.geoJson(null, {
   style: function (feature) {
     return {
@@ -205,8 +220,9 @@ var baseLayers = {
 };
 
 var overlays = {
-  "Provinces": boroughs,
   "Amphitheaters": subwayLines,
+  "Provinces (200 AD)": boroughs,
+  "Roman Territy 60 BC": rome60bc
 };
 
 var layerControl = L.control.layers(baseLayers, overlays, {
