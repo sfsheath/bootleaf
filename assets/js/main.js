@@ -51,6 +51,33 @@ $.getJSON("data/roman-maps/roman_empire_bc_60_extent.geojson", function (data) {
   rome60bc.addData(data);
 });
 
+var rome14 = L.geoJson(null, {
+  style: function (feature) {
+    return {
+      color: "blue",
+      fill: true,
+      opacity: .5,
+      clickable: false
+    };
+  },
+});
+$.getJSON("data/roman-maps/roman_empire_ad_14_extent.geojson", function (data) {
+  rome14.addData(data);
+});
+
+var rome69 = L.geoJson(null, {
+  style: function (feature) {
+    return {
+      color: "blue",
+      fill: true,
+      opacity: .5,
+      clickable: false
+    };
+  },
+});
+$.getJSON("data/roman-maps/roman_empire_ad_69_extent.geojson", function (data) {
+  rome69.addData(data);
+});
 
 var subwayLines = L.geoJson(null, {
   style: function (feature) {
@@ -221,9 +248,12 @@ var baseLayers = {
 
 var overlays = {
   "Amphitheaters": subwayLines,
-  "Provinces (200 AD)": boroughs,
   "Roman Territory 60 BC": rome60bc
+  "Provinces (14 AD)": rome14,
+  "Provinces (69 AD)": rome69,
+  "Provinces (200 AD)": boroughs,
 };
+
 
 var layerControl = L.control.layers(baseLayers, overlays, {
   collapsed: isCollapsed
