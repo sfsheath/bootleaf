@@ -248,10 +248,10 @@ var baseLayers = {
 
 var overlays = {
   "Amphitheaters": subwayLines,
-  "Roman Territory 60 BC": rome60bc
+  "Roman Territory 60 BC": rome60bc,
   "Provinces (14 AD)": rome14,
   "Provinces (69 AD)": rome69,
-  "Provinces (200 AD)": boroughs,
+  "Provinces (200 AD)": boroughs
 };
 
 
