@@ -26,6 +26,7 @@ var mapquestHYB = L.layerGroup([L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/sa
 var boroughs = L.geoJson(null, {
   style: function (feature) {
     return {
+      weight: 2,
       color: "black",
       fill: true,
       opacity: .5,
@@ -40,6 +41,7 @@ $.getJSON("data/roman-maps/roman_empire_ad_200_extent.geojson", function (data) 
 var rome60bc = L.geoJson(null, {
   style: function (feature) {
     return {
+      weight: 2,
       color: "blue",
       fill: true,
       opacity: .5,
@@ -54,6 +56,7 @@ $.getJSON("data/roman-maps/roman_empire_bc_60_extent.geojson", function (data) {
 var rome14 = L.geoJson(null, {
   style: function (feature) {
     return {
+      weight: 2,
       color: "blue",
       fill: true,
       opacity: .5,
@@ -68,6 +71,7 @@ $.getJSON("data/roman-maps/roman_empire_ad_14_extent.geojson", function (data) {
 var rome69 = L.geoJson(null, {
   style: function (feature) {
     return {
+      weight: 2,
       color: "blue",
       fill: true,
       opacity: .5,
@@ -84,7 +88,7 @@ var subwayLines = L.geoJson(null, {
     return {
       color: "red",
       fill: true,
-      opacity: .7,
+      opacity: .6,
       clickable: true
     };
   },
