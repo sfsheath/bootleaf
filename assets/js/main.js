@@ -3,6 +3,9 @@ var map, boroughSearch = [],
     museumSearch = [];
 
 /* Basemap Layers */
+var imperium = var baseLayer = L.tileLayer('http://pelagios.dme.ait.ac.at/tilesets/imperium//{z}/{x}/{y}.png', {
+          attribution: 'Tiles: <a href="http://imperium.ahlfeldt.se/">DARE 2014</a>'
+        });
 var mapquestOSM = L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
   maxZoom: 19,
   subdomains: ["otile1", "otile2", "otile3", "otile4"],
@@ -151,6 +154,7 @@ if (document.body.clientWidth <= 767) {
 }
 
 var baseLayers = {
+  "Imperium" : imperium,
   "Street Map": mapquestOSM,
   "Aerial Imagery": mapquestOAM,
   "Imagery with Streets": mapquestHYB
