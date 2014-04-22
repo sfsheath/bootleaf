@@ -89,7 +89,7 @@ var subwayLines = L.geoJson(null, {
     };
   },
   pointToLayer: function(feature, latlng) {
-        return new L.CircleMarker(latlng, {radius: 5, fillColor : "red", fillOpacity: 0.5});
+        return new L.CircleMarker(latlng, {radius: 6, fillColor : "red", fillOpacity: 0.8});
   },
   onEachFeature: function (feature, layer) {
     boroughSearch.push({
