@@ -82,14 +82,14 @@ $.getJSON("data/roman-maps/roman_empire_ad_69_extent.geojson", function (data) {
 var subwayLines = L.geoJson(null, {
   style: function (feature) {
     return {
-      color: "black",
+      color: "red",
       fill: true,
-      opacity: 1,
+      opacity: .7,
       clickable: true
     };
   },
   pointToLayer: function(feature, latlng) {
-        return new L.CircleMarker(latlng, {radius: 10, fillOpacity: 0.85});
+        return new L.CircleMarker(latlng, {radius: 5, fillOpacity: 0.5});
   },
   onEachFeature: function (feature, layer) {
     boroughSearch.push({
