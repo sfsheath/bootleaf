@@ -3,7 +3,7 @@ var map, boroughSearch = [],
     museumSearch = [];
 
 /* Basemap Layers */
-var imperium = var baseLayer = L.tileLayer('http://pelagios.dme.ait.ac.at/tilesets/imperium//{z}/{x}/{y}.png', {
+var imperium =  L.tileLayer('http://pelagios.dme.ait.ac.at/tilesets/imperium//{z}/{x}/{y}.png', {
           attribution: 'Tiles: <a href="http://imperium.ahlfeldt.se/">DARE 2014</a>'
         });
 var mapquestOSM = L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
