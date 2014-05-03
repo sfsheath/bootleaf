@@ -86,7 +86,7 @@ $.getJSON("data/roman-maps/roman_empire_ad_69_extent.geojson", function (data) {
   rome69.addData(data);
 });
 
-var buffer75km = L.geoJson(null, {
+var buffer80overlap = L.geoJson(null, {
   style: function (feature) {
     return {
       weight: 2,
@@ -97,8 +97,8 @@ var buffer75km = L.geoJson(null, {
     };
   },
 });
-$.getJSON("data/roman-amphitheaters/ra-75km-buffer.geojson", function (data) {
-  buffer75km.addData(data);
+$.getJSON("data/roman-amphitheaters/80percent-overlap-buffer.geojson", function (data) {
+  buffer80overlap.addData(data);
 });
 
 var subwayLines = L.geoJson(null, {
@@ -177,7 +177,7 @@ var baseLayers = {
 
 var overlays = {
   "Amphitheaters": subwayLines,
-  "75 Km Buffer": buffer75km,
+  "80% Overlap Buffer": buffer80overlap,
   "Roman Territory 60 BC": rome60bc,
   "Provinces (14 AD)": rome14,
   "Provinces (69 AD)": rome69,
