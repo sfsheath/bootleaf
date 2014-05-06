@@ -101,7 +101,7 @@ $.getJSON("data/roman-amphitheaters/80percent-overlap-buffer.geojson", function 
   buffer80overlap.addData(data);
 });
 
-var buffer = L.geoJson(null, {
+var bufferAll = L.geoJson(null, {
   style: function (feature) {
     return {
       weight: 2,
@@ -112,8 +112,8 @@ var buffer = L.geoJson(null, {
     };
   },
 });
-$.getJSON("data/roman-amphitheaters/222.5km-buffer.geojson.geojson", function (data) {
-  buffer.addData(data);
+$.getJSON("data/roman-amphitheaters/222.5km-buffer.geojson", function (data) {
+  bufferAll.addData(data);
 });
 
 var buffer12 = L.geoJson(null, {
@@ -207,7 +207,7 @@ var baseLayers = {
 
 var overlays = {
   "Amphitheaters": subwayLines,
-  "Overlapping Buffers": buffer,
+  "Overlapping Buffers": bufferAll,
   "80% Overlap Buffer": buffer80overlap,
   "12Km Buffer" : buffer12,
   "Roman Territory 60 BC": rome60bc,
